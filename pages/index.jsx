@@ -1,16 +1,19 @@
-import { useRouter } from 'next/router';
-import en from '../locales/en/common.json';
-import ar from '../locales/ar/common.json';
-import de from '../locales/de/common.json';
+// pages/index.jsx
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // هذا السطر يقوم بتحميل إعدادات الترجمة
 
-export default function Home() {
-  const { locale } = useRouter();
-  const t = locale === 'ar' ? ar : locale === 'de' ? de : en;
+export default function HomePage() {
+  const { t } = useTranslation();
 
   return (
-    <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif', direction: locale === 'ar' ? 'rtl' : 'ltr' }}>
-      <h1>{t.welcome}</h1>
-      <p>{t.description}</p>
-    </div>
-  );
-}
+    <div style={{ padding: '20px' }}>
+      <h1>{t('pizza')}</h1>
+      <p>{t('place_order')}</p>
+
+      <label>{t('select_dish')}:</label>
+      <select>
+        <option value="">{t('choose')}</option>
+        <option value="pizza">{t('pizza')}</option>
+        <option value="burger">{t('burger')}</option>
+        <
