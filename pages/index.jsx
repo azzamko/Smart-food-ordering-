@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Welcome to Smart Food Ordering 🍔</h1>
-      <p>This site supports Arabic, English, and German!</p>
+    <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
+      <h1>مرحباً بك في خدمة طلب الطعام الذكي</h1>
+      <p>اختر وجبتك المفضلة وسيقوم الذكاء الاصطناعي بمساعدتك في الطلب بسرعة وسهولة.</p>
     </div>
   );
 }
