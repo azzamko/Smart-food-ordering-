@@ -1,4 +1,11 @@
 {
-  "welcome": "Welcome to Smart Food Ordering Service",
-  "description": "Choose your favorite meal and AI will help you order quickly and easily."
+  "pizza": "Pizza",
+  "burger": "Burger",
+  "salad": "Salad",
+  "place_order": "Place Your Order",
+  "select_dish": "Select a dish",
+  "choose": "Choose...",
+  "quantity": "Quantity",
+  "submit_order": "Submit Order",
+  "order_received": "Order received"
 }
