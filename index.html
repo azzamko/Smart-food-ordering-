@@ -79,5 +79,41 @@
     form.reset(); // يعيد تعيين النموذج
   });
 </script>
-</body>
+</body><h2>📌 موقعك على الخريطة:</h2>
+<div id="map" style="width: 100%; height: 300px; border: 1px solid #ccc;"></div>
+
+<script>
+  function initMap(lat, lon) {
+    const userLocation = { lat: lat, lng: lon };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: userLocation
+    });
+    new google.maps.Marker({
+      position: userLocation,
+      map: map,
+      title: "أنت هنا 📍"
+    });
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      function(position) {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        initMap(lat, lon);
+      },
+      function(error) {
+        document.getElementById("map").innerHTML = "تعذّر تحميل الخريطة. لم يتم السماح بالموقع.";
+      }
+    );
+  } else {
+    document.getElementById("map").innerHTML = "المتصفح لا يدعم تحديد الموقع.";
+  }
+</script>
+
+<!-- Google Maps API -->
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY">
+</script>
 </html>
