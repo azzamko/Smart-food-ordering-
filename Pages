@@ -1,5 +1,0 @@
-smart-food-ordering/
-├── pages/
-│   └── index.js
-├── next.config.js
-└── package.json
