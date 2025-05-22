@@ -1,0 +1,11 @@
+{
+  "pizza": "بيتزا",
+  "burger": "برغر",
+  "salad": "سلطة",
+  "place_order": "قدم طلبك",
+  "select_dish": "اختر طبقاً",
+  "choose": "اختر...",
+  "quantity": "الكمية",
+  "submit_order": "ارسال الطلب",
+  "order_received": "تم استلام الطلب"
+}
