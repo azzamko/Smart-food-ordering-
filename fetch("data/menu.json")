@@ -1,0 +1,14 @@
+[
+  {
+    "name": "بيتزا مارغريتا",
+    "description": "بيتزا تقليدية مع صلصة الطماطم وجبن الموزاريلا",
+    "price": "8.00",
+    "image": "images/pizza.jpg"
+  },
+  {
+    "name": "برغر لحم",
+    "description": "برغر لحم مع خس، طماطم وصوص خاص",
+    "price": "6.50",
+    "image": "images/burger.jpg"
+  }
+]
